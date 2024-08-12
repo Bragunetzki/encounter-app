@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+.form-container label {
+  white-space: nowrap; /* Prevent label from breaking to multiple lines */
+  width: auto;
+  flex-shrink: 0;
+}
+
+
+.form-container input,
+.form-container select,
+.form-container button {
+  width: auto;
+  padding: 0.5rem;
+  flex-grow: 1; /* Allow input/select/button to grow and fill the available space */
+  min-width: 150px; /* Set a minimum width to ensure readability */
+  box-sizing: border-box;
+}
+
+.form-container button {
+  width: 214px; /* Slightly wider for button if needed to match padding */
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  min-width: 100px; /* Ensure buttons have enough space for text */
+}
